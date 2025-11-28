@@ -1,13 +1,88 @@
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
+/* contact.css */
+
+/* Container styling */
+#contact {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 6px;
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section title */
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Form styling */
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input and textarea fields */
+#contact input,
+#contact textarea {
+  padding: 15px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Button styling */
+#contact button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact form {
+    gap: 15px;
+  }
+
+  #contact input,
+  #contact textarea,
+  #contact button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
 }
