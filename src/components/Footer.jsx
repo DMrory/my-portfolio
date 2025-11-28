@@ -1,9 +1,9 @@
-import "../styles/footer.css";
+import "../styles/Footer.css"; // fix path
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Your Name. All Rights Reserved.</p>
+      © 2025 Derrick Orori — All Rights Reserved
     </footer>
   );
 }

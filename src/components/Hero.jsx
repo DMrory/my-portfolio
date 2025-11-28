@@ -1,15 +1,19 @@
-import "../styles/hero.css";
+import "../styles/Hero.css"; // fix path
+import myPhoto from "../assets/myphoto.jpg"; // Replace with your image
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="hero-text">
-        <h1>Hello, I'm <span>Your Name</span></h1>
-        <p>A Professional Web Developer & Designer</p>
-        <a href="#projects" className="btn">
-          View My Work
+    <section id="home" className="hero fade-in">
+      <div className="text">
+        <h1>Hello, I'm <span className="primary">Derrick Orori</span></h1>
+        <p>Full-Stack Developer • Mobile Apps • Systems Engineer</p>
+
+        <a href="#contact">
+          <button>Hire Me</button>
         </a>
       </div>
+
+      <img src={myPhoto} alt="Me" className="profile-img" />
     </section>
   );
 }

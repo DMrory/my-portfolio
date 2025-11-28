@@ -1,35 +1,24 @@
-import "../styles/projects.css";
-
+import "../styles/Projects.css"; // fix path
 export default function Projects() {
-  const projects = [
-    {
-      title: "Asset Management System",
-      desc: "A PHP & MySQL system to manage company assets.",
-      link: "#"
-    },
-    {
-      title: "React Portfolio",
-      desc: "My personal portfolio built with React.",
-      link: "#"
-    },
-    {
-      title: "E-commerce App",
-      desc: "A full-featured online shopping website.",
-      link: "#"
-    }
-  ];
-
   return (
-    <section id="projects">
+    <section id="projects" className="container fade-in">
       <h2>Projects</h2>
+
       <div className="project-grid">
-        {projects.map((p, index) => (
-          <div className="project-card" key={index}>
-            <h3>{p.title}</h3>
-            <p>{p.desc}</p>
-            <a href={p.link} className="btn">View</a>
-          </div>
-        ))}
+        <div className="card">
+          <h3>Asset Management System</h3>
+          <p>Full PHP + MySQL system for company asset tracking.</p>
+        </div>
+
+        <div className="card">
+          <h3>Mobile App</h3>
+          <p>Cross-platform Flutter app with Firebase backend.</p>
+        </div>
+
+        <div className="card">
+          <h3>Portfolio Website</h3>
+          <p>Modern personal portfolio built with Vite React.</p>
+        </div>
       </div>
     </section>
   );

@@ -1,15 +1,15 @@
-import "../styles/skills.css";
-
+import "../styles/Skills.css"; // fix path
 export default function Skills() {
-  const skills = ["HTML", "CSS", "JavaScript", "React", "PHP", "MySQL", "Python"];
-
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="container fade-in">
       <h2>Skills</h2>
-      <div className="skill-list">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>{skill}</div>
-        ))}
+      <div className="skills-grid">
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Flutter</span>
+        <span>Node.js</span>
       </div>
     </section>
   );
