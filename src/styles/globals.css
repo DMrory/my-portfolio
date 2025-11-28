@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fbff;
+  color: #222;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #005ad1;
+}

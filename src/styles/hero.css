@@ -1,0 +1,14 @@
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #e3f0ff, #f8faff);
+}
+
+.hero-text h1 span {
+  color: #0077ff;
+}
+
+.hero-text p {
+  margin: 15px 0;
+}
