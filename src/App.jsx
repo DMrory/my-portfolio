@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";   
 import Footer from "./components/Footer";
+import UploadCV from "./components/UploadCV";
 import "./index.css";
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Testimonials />
+      <UploadCV />
       <Contact />
       <Footer />
     </>
